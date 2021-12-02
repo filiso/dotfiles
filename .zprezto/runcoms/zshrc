@@ -1,0 +1,53 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('$HOME/programs/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/programs/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/programs/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/programs/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Customize to your needs...
+
+source $HOME/programs/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/programs/zsh-history-substring-search/zsh-history-substring-search.zsh
+# keybindings for substring-search
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+
+# Enable .dotfile tracking in $HOME.
+# Based on https://www.atlassian.com/git/tutorials/dotfiles
+# and https://news.ycombinator.com/item?id=11071754
+echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'"
+
+# AFNI
+export PATH=$PATH:$HOME/abin/
+# add afni Roi Average plugin
+export AFNI_ALLOW_ROIAVERAGE_PLUGIN=YES
+
+# fuzzy file search
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# add dir with symlinks
+export PATH=$PATH:~/bin/
