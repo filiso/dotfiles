@@ -39,7 +39,9 @@ bindkey '^N' history-substring-search-down
 # Enable .dotfile tracking in $HOME.
 # Based on https://www.atlassian.com/git/tutorials/dotfiles
 # and https://news.ycombinator.com/item?id=11071754
-echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'"
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
+# echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'"
 
 # AFNI
 export PATH=$PATH:$HOME/abin/
