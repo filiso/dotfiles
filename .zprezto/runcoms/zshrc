@@ -53,3 +53,6 @@ export AFNI_ALLOW_ROIAVERAGE_PLUGIN=YES
 
 # add dir with symlinks
 export PATH=$PATH:~/bin/
+
+# set neovim as the default editor
+export EDITOR='nv'
