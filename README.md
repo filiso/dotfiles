@@ -88,3 +88,15 @@ git clone the following into $HOME/programs
 - Anaconda
   - either don't do the automated config at the end of installation or revert the .zshrc changes back to those from repo (dependent on $HOME, not fixed path)
 
+## Additional config files
+
+- Typora
+  - go to .config/Typora/themes
+  ```
+  cp github.css github.user.css
+  ```
+  - in the #write section add:
+  ```
+  max-width: 1100 px;
+  text-align: justify;
+  ```
