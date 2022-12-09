@@ -51,7 +51,9 @@ Instead of the listed command use (single >):
 
 Remove the files created by prezto:
 
+> ```
 > rm ~/.zprezto/runcoms/zpreztorc ~/.zprezto/runcoms/zshrc
+> ```
 
 > ```
 > config checkout
