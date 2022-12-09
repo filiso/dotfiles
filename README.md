@@ -72,7 +72,7 @@ Use *config* instead of *git* in the home dir, e.g.:
 
 ### hist-subst-search and syntax highlighting
 
-git clone the following into $HOME/programs
+git clone the following into $HOME/opt
 
 - https://github.com/zsh-users/zsh-history-substring-search
 - https://github.com/zsh-users/zsh-syntax-highlighting
