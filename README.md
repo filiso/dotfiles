@@ -49,10 +49,10 @@ Instead of the listed command use (single >):
 > git clone --bare https://github.com/filiso/dotfiles $HOME/.dotfiles
 > ```
 
-Remove the files created by prezto:
+Remove the files created by prezto and the .zshrc symlink:
 
 > ```
-> rm ~/.zprezto/runcoms/zpreztorc ~/.zprezto/runcoms/zshrc
+> rm ~/.zprezto/runcoms/zpreztorc ~/.zprezto/runcoms/zshrc ~/.zshrc
 > ```
 
 > ```
