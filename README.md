@@ -87,9 +87,10 @@ git clone the following into $HOME/opt
 - fzf
 - Okular
 - fd
+- xsel
 
 ```
-sudo apt install guake tmux fzf okular fd-find
+sudo apt install guake tmux fzf okular fd-find xsel
 ```
 
 - Neovim
