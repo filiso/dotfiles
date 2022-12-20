@@ -85,12 +85,13 @@ git clone the following into $HOME/opt
   - set zsh as the default shell.
 - Tmux
 - fzf
-- Okular
+- mc
 - fd
+- Okular
 - xsel
 
 ```
-sudo apt install guake tmux fzf okular fd-find xsel
+sudo apt install guake tmux fzf mc fd-find okular xsel
 ```
 
 - Neovim
