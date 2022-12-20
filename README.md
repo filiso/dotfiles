@@ -19,7 +19,7 @@ Run *zsh* without creating the .zshrc file.
 > done
 > ```
 
-Set Zsh as default shell (might not work on work workstations):
+Set Zsh as default shell (might not work on work workstations; in this case set it in Guake):
 
 > ```
 > chsh -s /bin/zsh
