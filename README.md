@@ -105,6 +105,7 @@ sudo apt install guake tmux fzf mc fd-find ripgrep okular xsel cmake
 - Mattermost
 - Discord
 - Slack
+- Zotero + Zotfile
 
 ## Additional config files
 
