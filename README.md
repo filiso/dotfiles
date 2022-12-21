@@ -87,12 +87,13 @@ git clone the following into $HOME/opt
 - fzf
 - mc
 - fd
+- ripgrep
 - Okular
 - xsel
 - cmake
 
 ```
-sudo apt install guake tmux fzf mc fd-find okular xsel cmake
+sudo apt install guake tmux fzf mc fd-find ripgrep okular xsel cmake
 ```
 
 - Neovim
@@ -100,6 +101,10 @@ sudo apt install guake tmux fzf mc fd-find okular xsel cmake
 - Miniconda
   - either don't do the automated config at the end of installation or revert the .zshrc changes back to those from repo (dependent on $HOME, not fixed path)
 - Nextcloud
+- Zoom
+- Mattermost
+- Discord
+- Slack
 
 ## Additional config files
 
