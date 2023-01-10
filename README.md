@@ -85,12 +85,16 @@ git clone the following into $HOME/opt
   - set zsh as the default shell.
 - Tmux
 - fzf
-- Okular
+- mc
 - fd
+- ripgrep
+- Okular
 - xsel
+- cmake
+- gcc, g++
 
 ```
-sudo apt install guake tmux fzf okular fd-find xsel
+sudo apt install guake tmux fzf mc fd-find ripgrep okular xsel cmake gcc g++
 ```
 
 - Neovim
@@ -98,6 +102,11 @@ sudo apt install guake tmux fzf okular fd-find xsel
 - Miniconda
   - either don't do the automated config at the end of installation or revert the .zshrc changes back to those from repo (dependent on $HOME, not fixed path)
 - Nextcloud
+- Zoom
+- Mattermost
+- Discord
+- Slack
+- Zotero + Zotfile
 
 ## Additional config files
 
