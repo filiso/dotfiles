@@ -29,6 +29,7 @@ unset __conda_setup
 
 source $HOME/opt/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/opt/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $HOME/opt/zsh-autosuggestions/zsh-autosuggestions.zsh
 # keybindings for substring-search
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
@@ -57,3 +58,11 @@ export PATH=$PATH:~/.local/bin/
 
 # set neovim as the default editor
 export EDITOR='nv'
+
+# Git aliases
+alias gs='git status -s'
+alias gd='git diff'
+alias ga='git add'
+alias gau='git add --update'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
