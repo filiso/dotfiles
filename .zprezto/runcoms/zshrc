@@ -36,6 +36,7 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
+bindkey '^ ' autosuggest-accept
 
 # Enable .dotfile tracking in $HOME.
 # Based on https://www.atlassian.com/git/tutorials/dotfiles
