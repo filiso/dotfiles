@@ -36,7 +36,7 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
-# bindkey '^ ' autosuggest-accept
+bindkey '^b' autosuggest-accept
 bindkey '^ ' autosuggest-execute
 
 # Enable .dotfile tracking in $HOME.
