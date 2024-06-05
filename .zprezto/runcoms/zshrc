@@ -68,3 +68,8 @@ alias ga='git add'
 alias gau='git add --update'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
+
+# disable system flow control (free Ctrl+V)
+# stty -ixon
+# instead of stty -ixon, use the following to unbind ^V
+bindkey -r '^V'

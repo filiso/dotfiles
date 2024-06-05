@@ -1,1 +1,1 @@
-/home/fsobczak//.zprezto/runcoms/zshrc
+/home/fs/.zprezto/runcoms/zshrc
