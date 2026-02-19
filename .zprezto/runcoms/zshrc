@@ -60,6 +60,7 @@ export PATH=$PATH:~/.local/bin/
 
 # set neovim as the default editor
 export EDITOR='nv'
+export VISUAL='nv'
 
 # Git aliases
 alias gs='git status -s'
@@ -72,6 +73,9 @@ alias gca='git commit -v -a'
 # Kubernetes alias
 alias k='kubectl'
 
+# Neovim + AI chat assistant alias
+alias nvchat='nv -c "PrtChatNew"'
+
 # disable system flow control (free Ctrl+V)
 # stty -ixon
 # instead of stty -ixon, use the following to unbind ^V
@@ -79,3 +83,8 @@ bindkey -r '^V'
 
 # set up npm global packages (https://docs.anthropic.com/en/docs/claude-code/troubleshooting#recommended-solution-create-a-user-writable-npm-prefix)
 export PATH=~/opt/npm-global/bin:$PATH
+
+. "$HOME/.local/bin/env"
+
+# opencode
+export PATH=/home/fs/.opencode/bin:$PATH
