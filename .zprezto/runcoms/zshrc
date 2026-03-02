@@ -88,3 +88,8 @@ export PATH=~/opt/npm-global/bin:$PATH
 
 # opencode
 export PATH=/home/fs/.opencode/bin:$PATH
+
+# codex cli
+alias codex-fs='CODEX_HOME="$HOME/.codex-fs" codex'
+alias codex-qm='CODEX_HOME="$HOME/.codex-qm" codex'
+
