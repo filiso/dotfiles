@@ -46,10 +46,3 @@ alias nvchat='nv -c "PrtChatNew"'
 # stty -ixon
 # instead of stty -ixon, use the following to unbind ^V
 bindkey -r '^V'
-
-# set up npm global packages (https://docs.anthropic.com/en/docs/claude-code/troubleshooting#recommended-solution-create-a-user-writable-npm-prefix)
-export PATH=~/opt/npm-global/bin:$PATH
-
-# opencode
-export PATH=$HOME/.opencode/bin:$PATH
-
