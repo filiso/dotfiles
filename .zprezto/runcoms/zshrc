@@ -93,3 +93,5 @@ export PATH=$HOME/.opencode/bin:$PATH
 alias codex-fs='CODEX_HOME="$HOME/.codex-fs" codex'
 alias codex-qm='CODEX_HOME="$HOME/.codex-qm" codex'
 
+# oh-my-codex - to not interfere when started inside tmux
+export OMX_LAUNCH_POLICY=direct
