@@ -90,6 +90,8 @@ git clone the following into $HOME/opt
 - fd
 - ripgrep
 - Okular
+- lg
+- tree
 - xsel (wl-clipboard instead in Ubuntu 22.04 [bcs. of Wayland](https://ramezanpour.net/post/2022/07/24/access-os-clipboard-in-neovim))
 - cmake
 - gcc, g++
